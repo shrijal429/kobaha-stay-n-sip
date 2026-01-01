@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link className="hover:text-amber-700" href="/">
           Home
         </Link>
-        <Link className="hover:text-amber-700" href="#menu">
+        <Link className="hover:text-amber-700" href="/menu">
           Menu
         </Link>
         <Link className="hover:text-amber-700" href="/services">

@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function MenuSection() {
   return (
     <div className="min-h-screen bg-black flex flex-col items-center text-white gap-16 px-6 sm:px-10 lg:px-20 xl:px-40 py-20">
@@ -63,8 +65,9 @@ export default function MenuSection() {
         </div>
       </div>
 
-      <button
-        className="w-56 sm:w-60 relative text-center font-bold uppercase
+      <Link href="/menu">
+        <button
+          className="w-56 sm:w-60 relative text-center font-bold uppercase
         text-[16px] sm:text-[18px] tracking-[2px]
         px-8 py-3
         border-[3px] border-amber-600
@@ -79,9 +82,10 @@ export default function MenuSection() {
         before:origin-center
         before:transition-transform before:duration-500
         hover:before:scale-x-100"
-      >
-        <span className="relative z-10">Browse Menu</span>
-      </button>
+        >
+          <span className="relative z-10">Browse Menu</span>
+        </button>
+      </Link>
     </div>
   );
 }
