@@ -10,7 +10,7 @@ export default function Menu() {
             Fresh Taste Buds
           </div>
           <div class="text-5xl font-serif text-gray-900 tracking-wide">
-            STARTERS
+            Breakfast
           </div>
         </div>
 
@@ -18,10 +18,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Purple Corn Tostada
+                Toast With Your Choice of Spread
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $36
+                Rs. 130
               </div>
             </div>
           </div>
@@ -29,10 +29,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Caprese Con Mozzarella Di Bufala
+                Eggs On Toast
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $12
+                Rs 250
               </div>
             </div>
           </div>
@@ -40,10 +40,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bruno's Scribble
+                Smashed Avovado On Toast
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $30
+                Rs. 340
               </div>
             </div>
           </div>
@@ -51,10 +51,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Salt & Pepper Calamari
+                Pancakes w/t Maple & Fruits
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 350
               </div>
             </div>
           </div>
@@ -62,10 +62,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Fresh Oysters Dozen
+                The Hangover Burger
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $59
+                Rs. 480
               </div>
             </div>
           </div>
@@ -73,10 +73,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Wild Mushroom Arancini
+                Little Brekkie
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 495
               </div>
             </div>
           </div>
@@ -84,10 +84,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bread with Smoked Wagyu Butter
+                Big Brekkie
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $13
+                Rs 895
               </div>
             </div>
           </div>
@@ -95,10 +95,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Coffee Cured & Smoked Duck Breast
+                French Toast w/t Fruit Bowl
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $25
+                Rs. 370
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function Menu() {
             Fresh Taste Buds
           </div>
           <div class="text-5xl font-serif text-gray-900 tracking-wide">
-            STARTERS
+            Lunch / Dinner
           </div>
         </div>
 
@@ -121,10 +121,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Purple Corn Tostada
+                Crispy Chicken Burger
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $36
+                Rs. 450
               </div>
             </div>
           </div>
@@ -132,10 +132,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Caprese Con Mozzarella Di Bufala
+                Pad Thai (Chicken / Veg)
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $12
+                Rs. 520 / 450
               </div>
             </div>
           </div>
@@ -143,10 +143,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bruno's Scribble
+                Spaghetti (Carbonara / Bolognese)
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $30
+                Rs. 550 / 520
               </div>
             </div>
           </div>
@@ -154,10 +154,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Salt & Pepper Calamari
+                MO: MO (Chicken / Veg)
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 260 / 220
               </div>
             </div>
           </div>
@@ -165,10 +165,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Fresh Oysters Dozen
+                Grilled Fish w/t Mashed Potatoes
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $59
+                Rs. 495
               </div>
             </div>
           </div>
@@ -176,10 +176,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Wild Mushroom Arancini
+                American Choupsey
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 430
               </div>
             </div>
           </div>
@@ -187,10 +187,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bread with Smoked Wagyu Butter
+                Stir Fried Veg w/t Rice on Teriyaki Sauce
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $13
+                Rs. 390
               </div>
             </div>
           </div>
@@ -198,10 +198,32 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Coffee Cured & Smoked Duck Breast
+                Hot Basil Chicken w/t Rice & Egg
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $25
+                Rs. 480
+              </div>
+            </div>
+          </div>
+
+          <div class=" pb-6">
+            <div class="flex justify-between mb-2">
+              <div class="text-xl font-serif text-gray-900 pr-4">
+                Nepalese Dal Bhat (Chicken / Veg)
+              </div>
+              <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
+                Rs. 550 / 450
+              </div>
+            </div>
+          </div>
+
+          <div class=" pb-6">
+            <div class="flex justify-between mb-2">
+              <div class="text-xl font-serif text-gray-900 pr-4">
+                Korean Stirred Fried Pork w/t Rice
+              </div>
+              <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
+                Rs. 590
               </div>
             </div>
           </div>
@@ -215,7 +237,7 @@ export default function Menu() {
             Fresh Taste Buds
           </div>
           <div class="text-5xl font-serif text-gray-900 tracking-wide">
-            STARTERS
+            Dessert
           </div>
         </div>
 
@@ -223,10 +245,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Purple Corn Tostada
+                Cheese Cake
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $36
+                Rs. 350
               </div>
             </div>
           </div>
@@ -234,10 +256,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Caprese Con Mozzarella Di Bufala
+                Black Forest
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $12
+                Rs. 150
               </div>
             </div>
           </div>
@@ -245,10 +267,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bruno's Scribble
+                Butter Croissant
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $30
+                Rs. 150
               </div>
             </div>
           </div>
@@ -256,10 +278,10 @@ export default function Menu() {
           <div class="pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Salt & Pepper Calamari
+                Chicken Patties
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 200
               </div>
             </div>
           </div>
@@ -267,10 +289,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between  mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Fresh Oysters Dozen
+                Fudgy Brownies
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $59
+                Rs. 220
               </div>
             </div>
           </div>
@@ -278,10 +300,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Wild Mushroom Arancini
+                Brownies Sizzler
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $18
+                Rs. 350
               </div>
             </div>
           </div>
@@ -289,10 +311,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Bread with Smoked Wagyu Butter
+                Latte Cookies
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $13
+                Rs. 500
               </div>
             </div>
           </div>
@@ -300,10 +322,10 @@ export default function Menu() {
           <div class=" pb-6">
             <div class="flex justify-between mb-2">
               <div class="text-xl font-serif text-gray-900 pr-4">
-                Coffee Cured & Smoked Duck Breast
+                Chocochip Cookies
               </div>
               <div class="text-xl font-serif text-gray-900 whitespace-nowrap">
-                $25
+                Rs. 50
               </div>
             </div>
           </div>
