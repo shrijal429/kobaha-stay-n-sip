@@ -40,10 +40,10 @@ export default function Navbar() {
         <Link onClick={() => setOpen(false)} href="/">
           Home
         </Link>
-        <Link onClick={() => setOpen(false)} href="#menu">
+        <Link onClick={() => setOpen(false)} href="/menu">
           Menu
         </Link>
-        <Link onClick={() => setOpen(false)} href="#services">
+        <Link onClick={() => setOpen(false)} href="/services">
           Services
         </Link>
         <Link

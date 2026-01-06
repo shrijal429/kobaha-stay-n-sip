@@ -45,17 +45,15 @@ export default function Footer() {
         >
           <p className="font-bold">Quick Links</p>
           <div className="flex flex-col gap-1 text-sm">
-            {["Home", "Services", "About", "Portfolio", "Contact"].map(
-              (link) => (
-                <motion.div
-                  key={link}
-                  whileHover={{ x: 5 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <Link href="/">{link}</Link>
-                </motion.div>
-              )
-            )}
+            {["Home", "Menu", "Services", "Contact"].map((link) => (
+              <motion.div
+                key={link}
+                whileHover={{ x: 5 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
+                <Link href="/">{link}</Link>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
 
@@ -63,10 +61,10 @@ export default function Footer() {
           variants={itemVariants}
           className="flex flex-col gap-4 text-center sm:text-left"
         >
-          <p className="font-bold">Services</p>
+          <p className="font-bold">Opening hours</p>
           <div className="flex flex-col gap-1 text-sm">
-            <p>Live Music</p>
-            <p>HomeStay</p>
+            <p>Open 9:00am</p>
+            <p>Close 10:00pm</p>
           </div>
         </motion.div>
 
@@ -76,9 +74,37 @@ export default function Footer() {
         >
           <p className="font-bold">Contacts</p>
           <div className="flex flex-col gap-1 text-sm">
-            <p>+977 98XXXXXXXX</p>
-            <p>XXXXXXXXXX@gmail.com</p>
+            <p>+977 986-0125422</p>
+            <p>kobahastaynsip@gmail.com</p>
             <p>Kobaha, Lalitpur</p>
+          </div>
+          <p className="text-xs font-bold pb-2">FOLLOW US</p>
+          <div className="flex gap-5">
+            {["facebook", "instagram", "twitter"].map((icon) =>
+              icon === "instagram" ? (
+                <a
+                  key={icon}
+                  href="https://www.instagram.com/_kobaha_stay_n_sip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={`/assets/icons/${icon}.png`}
+                    width={20}
+                    height={20}
+                    alt={icon}
+                  />
+                </a>
+              ) : (
+                <Image
+                  key={icon}
+                  src={`/assets/icons/${icon}.png`}
+                  width={20}
+                  height={20}
+                  alt={icon}
+                />
+              )
+            )}
           </div>
         </motion.div>
       </motion.div>

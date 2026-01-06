@@ -55,7 +55,7 @@ export default function ContactUs() {
             variants={fadeUp}
             className="flex items-center gap-2 text-xs pb-4"
           >
-            <span className="h-[1px] w-10 bg-[#c08d35]"></span>
+            <span className="h-[1] w-10 bg-[#c08d35]"></span>
             <p className="text-[#c08d35] font-bold">KEEP CLOSE</p>
           </motion.div>
 
@@ -87,11 +87,11 @@ export default function ContactUs() {
               },
               {
                 src: "/assets/icons/phonelogo.png",
-                lines: ["+977 9841XXXXXX", "+977 9841XXXXXX"],
+                lines: ["+977 986-0125422", "+977 986-1356244"],
               },
               {
                 src: "/assets/icons/mail.png",
-                lines: ["kobahastay@gmail.com", "kobahasip@gmail.com"],
+                lines: ["kobahastaynsip@gmail.com", "kobahasip@gmail.com"],
               },
               {
                 src: "/assets/icons/clock.png",
@@ -116,15 +116,31 @@ export default function ContactUs() {
           <motion.div variants={fadeUp} className="pb-3">
             <p className="text-xs font-bold pb-3">FOLLOW US</p>
             <div className="flex gap-5">
-              {["facebook", "instagram", "twitter"].map((icon) => (
-                <Image
-                  key={icon}
-                  src={`/assets/icons/${icon}.png`}
-                  width={20}
-                  height={20}
-                  alt={icon}
-                />
-              ))}
+              {["facebook", "instagram", "twitter"].map((icon) =>
+                icon === "instagram" ? (
+                  <a
+                    key={icon}
+                    href="https://www.instagram.com/_kobaha_stay_n_sip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={`/assets/icons/${icon}.png`}
+                      width={20}
+                      height={20}
+                      alt={icon}
+                    />
+                  </a>
+                ) : (
+                  <Image
+                    key={icon}
+                    src={`/assets/icons/${icon}.png`}
+                    width={20}
+                    height={20}
+                    alt={icon}
+                  />
+                )
+              )}
             </div>
           </motion.div>
         </motion.div>
