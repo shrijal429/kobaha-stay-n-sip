@@ -70,10 +70,11 @@ export default function ContactUs() {
             variants={fadeUp}
             className="max-w-xl text-justify pb-10 text-sm md:text-base"
           >
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-            expedita magni vero fuga officiis aspernatur delectus ducimus ipsam
-            nostrum voluptatibus ipsum laboriosam, sequi neque nihil rem cumque
-            sapiente.
+            We’d love to hear from you! Whether you’re looking to book a cozy
+            room, reserve a table, explore our menu, or plan a special
+            gathering, our team is here to help. Reach out to us anytime and
+            we’ll make sure your experience with Kobaha Stay N’ Sip is truly
+            memorable.
           </motion.p>
 
           <motion.div
@@ -151,7 +152,10 @@ export default function ContactUs() {
         >
           <motion.div variants={fadeUp} className="pb-10">
             <h1 className="text-2xl md:text-3xl font-bold">Your Details</h1>
-            <p className="text-xs">Let us know how to get back to you</p>
+            <p className="text-xs">
+              Fill out the form below and we’ll get back to you as soon as
+              possible.
+            </p>
           </motion.div>
 
           <motion.form variants={container} className="flex flex-col gap-6">

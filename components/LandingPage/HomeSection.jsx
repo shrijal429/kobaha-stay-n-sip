@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HomeSection() {
   return (
@@ -48,15 +49,17 @@ export default function HomeSection() {
           Where food, harmony, and laughter come together
         </motion.p>
 
-        <motion.button
-          initial={{ scale: 0.8, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ delay: 1.2, duration: 0.5 }}
-          whileHover={{ scale: 1.1 }}
-          className="border py-2 sm:py-3 px-6 sm:px-10"
-        >
-          View Full Menu
-        </motion.button>
+        <Link href="/menu">
+          <motion.button
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+            className="inline-block border px-8 py-3 cursor-pointer bg-amber-500 text-white"
+          >
+            View Full Menu
+          </motion.button>
+        </Link>
       </motion.div>
     </div>
   );

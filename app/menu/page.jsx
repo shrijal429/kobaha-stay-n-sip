@@ -22,24 +22,29 @@ export default function Menu() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex bg-[url('/assets/images/momo.jpg')] items-center justify-center text-white h-60 bg-cover bg-center text-6xl font-serif py-10"
+        className="flex bg-[url('/assets/images/momo.jpg')]
+        items-center justify-center text-white
+        h-40 sm:h-52 md:h-60
+        bg-cover bg-center
+        text-3xl sm:text-4xl md:text-6xl
+        font-serif"
       >
         Our Menu
       </motion.div>
 
-      <div className="max-w-6xl mx-auto pt-20 pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <div className="text-orange-500 text-sm tracking-widest uppercase mb-3 font-medium">
+          <div className="text-orange-500 text-xs sm:text-sm tracking-widest uppercase mb-3 font-medium">
             Fresh Taste Buds
           </div>
-          <div className="text-5xl font-serif text-gray-900 tracking-wide">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-900 tracking-wide">
             Breakfast
           </div>
         </motion.div>
@@ -49,24 +54,24 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-x-20 gap-y-5"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
         >
           {[
             ["Toast With Your Choice of Spread", "Rs. 130"],
             ["Eggs On Toast", "Rs. 250"],
-            ["Smashed Avovado On Toast", "Rs. 340"],
+            ["Smashed Avocado On Toast", "Rs. 340"],
             ["Pancakes w/t Maple & Fruits", "Rs. 350"],
             ["The Hangover Burger", "Rs. 480"],
             ["Little Brekkie", "Rs. 495"],
             ["Big Brekkie", "Rs. 895"],
             ["French Toast w/t Fruit Bowl", "Rs. 370"],
           ].map(([name, price], i) => (
-            <motion.div key={i} variants={fadeUp} className="pb-6">
-              <div className="flex justify-between">
-                <div className="text-xl font-serif text-gray-900 pr-4">
+            <motion.div key={i} variants={fadeUp} className="pb-4">
+              <div className="flex justify-between items-start">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 pr-4">
                   {name}
                 </div>
-                <div className="text-xl font-serif text-gray-900 whitespace-nowrap">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 whitespace-nowrap">
                   {price}
                 </div>
               </div>
@@ -80,22 +85,24 @@ export default function Menu() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="flex bg-[url('/assets/images/chicken.jpg')] items-center justify-center h-70 bg-cover bg-center py-10"
+        className="bg-[url('/assets/images/chicken.jpg')]
+        h-40 sm:h-52 md:h-64
+        bg-cover bg-center"
       />
 
-      <div className="max-w-6xl mx-auto pt-20 pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <div className="text-orange-500 text-sm tracking-widest uppercase mb-3 font-medium">
+          <div className="text-orange-500 text-xs sm:text-sm tracking-widest uppercase mb-3 font-medium">
             Fresh Taste Buds
           </div>
-          <div className="text-5xl font-serif text-gray-900 tracking-wide">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-900 tracking-wide">
             Lunch / Dinner
           </div>
         </motion.div>
@@ -105,7 +112,7 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-x-20 gap-y-5"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
         >
           {[
             ["Crispy Chicken Burger", "Rs. 450"],
@@ -119,12 +126,12 @@ export default function Menu() {
             ["Nepalese Dal Bhat (Chicken / Veg)", "Rs. 550 / 450"],
             ["Korean Stirred Fried Pork w/t Rice", "Rs. 590"],
           ].map(([name, price], i) => (
-            <motion.div key={i} variants={fadeUp} className="pb-6">
-              <div className="flex justify-between">
-                <div className="text-xl font-serif text-gray-900 pr-4">
+            <motion.div key={i} variants={fadeUp} className="pb-4">
+              <div className="flex justify-between items-start">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 pr-4">
                   {name}
                 </div>
-                <div className="text-xl font-serif text-gray-900 whitespace-nowrap">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 whitespace-nowrap">
                   {price}
                 </div>
               </div>
@@ -138,21 +145,23 @@ export default function Menu() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="flex bg-[url('/assets/images/dessert.jpg')] items-center justify-center h-70 bg-cover bg-center py-10"
+        className="bg-[url('/assets/images/dessert.jpg')]
+        h-40 sm:h-52 md:h-64
+        bg-cover bg-center"
       />
 
-      <div className="max-w-6xl mx-auto pt-20 pb-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
-          <div className="text-orange-500 text-sm tracking-widest uppercase mb-3 font-medium">
+          <div className="text-orange-500 text-xs sm:text-sm tracking-widest uppercase mb-3 font-medium">
             Fresh Taste Buds
           </div>
-          <div className="text-5xl font-serif text-gray-900 tracking-wide">
+          <div className="text-3xl sm:text-4xl md:text-5xl font-serif text-gray-900 tracking-wide">
             Dessert
           </div>
         </motion.div>
@@ -162,7 +171,7 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-x-20 gap-y-5"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
         >
           {[
             ["Cheese Cake", "Rs. 350"],
@@ -174,12 +183,12 @@ export default function Menu() {
             ["Latte Cookies", "Rs. 500"],
             ["Chocochip Cookies", "Rs. 50"],
           ].map(([name, price], i) => (
-            <motion.div key={i} variants={fadeUp} className="pb-6">
-              <div className="flex justify-between">
-                <div className="text-xl font-serif text-gray-900 pr-4">
+            <motion.div key={i} variants={fadeUp} className="pb-4">
+              <div className="flex justify-between items-start">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 pr-4">
                   {name}
                 </div>
-                <div className="text-xl font-serif text-gray-900 whitespace-nowrap">
+                <div className="text-lg sm:text-xl font-serif text-gray-900 whitespace-nowrap">
                   {price}
                 </div>
               </div>

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const container = {
   hidden: {},
@@ -62,14 +63,16 @@ export default function TwoSection() {
           </motion.p>
         </div>
 
-        <motion.button
-          variants={fadeUp}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="bg-amber-600 text-white py-3 px-8 text-xs sm:text-sm w-fit hover:opacity-90 cursor-pointer"
-        >
-          DISCOVER MORE
-        </motion.button>
+        <Link href="/services">
+          <motion.button
+            variants={fadeUp}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="bg-amber-600 text-white py-3 px-8 text-xs sm:text-sm inline-block hover:opacity-90 cursor-pointer"
+          >
+            DISCOVER MORE
+          </motion.button>
+        </Link>
 
         <motion.div variants={fadeUp}>
           <Image

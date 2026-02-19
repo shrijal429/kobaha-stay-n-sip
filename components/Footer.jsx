@@ -36,7 +36,7 @@ export default function Footer() {
           variants={itemVariants}
           className="flex flex-col items-center sm:items-start"
         >
-          <Image src={kobahaLogo} height={150} alt="Kobaha Logo" />
+          <Image src={kobahaLogo} height={120} alt="Kobaha Logo" priority />
         </motion.div>
 
         <motion.div
@@ -44,14 +44,25 @@ export default function Footer() {
           className="flex flex-col gap-4 text-center sm:text-left"
         >
           <p className="font-bold">Quick Links</p>
-          <div className="flex flex-col gap-1 text-sm">
-            {["Home", "Menu", "Services", "Contact"].map((link) => (
+
+          <div className="flex flex-col gap-2 text-sm">
+            {[
+              { name: "Home", path: "/" },
+              { name: "Menu", path: "/menu" },
+              { name: "Services", path: "/services" },
+              { name: "Contact", path: "/contactus" },
+            ].map((link) => (
               <motion.div
-                key={link}
+                key={link.name}
                 whileHover={{ x: 5 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Link href="/">{link}</Link>
+                <Link
+                  href={link.path}
+                  className="hover:text-orange-400 transition"
+                >
+                  {link.name}
+                </Link>
               </motion.div>
             ))}
           </div>
@@ -61,10 +72,11 @@ export default function Footer() {
           variants={itemVariants}
           className="flex flex-col gap-4 text-center sm:text-left"
         >
-          <p className="font-bold">Opening hours</p>
+          <p className="font-bold">Opening Hours</p>
+
           <div className="flex flex-col gap-1 text-sm">
-            <p>Open 9:00am</p>
-            <p>Close 10:00pm</p>
+            <p>Open: 9:00 AM</p>
+            <p>Close: 10:00 PM</p>
           </div>
         </motion.div>
 
@@ -73,38 +85,37 @@ export default function Footer() {
           className="flex flex-col gap-4 text-center sm:text-left"
         >
           <p className="font-bold">Contacts</p>
+
           <div className="flex flex-col gap-1 text-sm">
             <p>+977 986-0125422</p>
             <p>kobahastaynsip@gmail.com</p>
             <p>Kobaha, Lalitpur</p>
           </div>
-          <p className="text-xs font-bold pb-2">FOLLOW US</p>
-          <div className="flex gap-5">
-            {["facebook", "instagram", "twitter"].map((icon) =>
-              icon === "instagram" ? (
-                <a
-                  key={icon}
-                  href="https://www.instagram.com/_kobaha_stay_n_sip?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <Image
-                    src={`/assets/icons/${icon}.png`}
-                    width={20}
-                    height={20}
-                    alt={icon}
-                  />
-                </a>
-              ) : (
+
+          <p className="text-xs font-bold pt-2">FOLLOW US</p>
+
+          <div className="flex gap-5 justify-center sm:justify-start items-center">
+            {["facebook", "instagram", "twitter"].map((icon) => (
+              <motion.a
+                key={icon}
+                href={
+                  icon === "instagram"
+                    ? "https://www.instagram.com/_kobaha_stay_n_sip?utm_source=ig_web_button_share_sheet"
+                    : "#"
+                }
+                target="_blank"
+                rel="noopener noreferrer"
+                whileHover={{ scale: 1.2 }}
+                transition={{ type: "spring", stiffness: 300 }}
+              >
                 <Image
-                  key={icon}
                   src={`/assets/icons/${icon}.png`}
                   width={20}
                   height={20}
                   alt={icon}
                 />
-              )
-            )}
+              </motion.a>
+            ))}
           </div>
         </motion.div>
       </motion.div>
