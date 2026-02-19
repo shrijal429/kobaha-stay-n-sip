@@ -3,42 +3,35 @@ import { motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
-  visible: { opacity: 1, y: 0 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
 
 const stagger = {
   hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.08,
-    },
-  },
+  visible: { transition: { staggerChildren: 0.08 } },
 };
 
 export default function Menu() {
   return (
-    <div className="min-h-screen bg-[#F8F6F1]">
+    <div className="min-h-screen bg-[#F8F6F1] overflow-x-hidden">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="flex bg-[url('/assets/images/momo.jpg')]
-        items-center justify-center text-white
-        h-40 sm:h-52 md:h-60
-        bg-cover bg-center
-        text-3xl sm:text-4xl md:text-6xl
-        font-serif"
+        className="flex w-full items-center justify-center text-white
+          h-40 sm:h-52 md:h-60
+          bg-[url('/assets/images/momo.jpg')] bg-cover bg-center
+          text-3xl sm:text-4xl md:text-6xl font-serif"
       >
         Our Menu
       </motion.div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 box-border">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
           <div className="text-orange-500 text-xs sm:text-sm tracking-widest uppercase mb-3 font-medium">
@@ -54,7 +47,7 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6 box-border"
         >
           {[
             ["Toast With Your Choice of Spread", "Rs. 130"],
@@ -85,18 +78,15 @@ export default function Menu() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('/assets/images/chicken.jpg')]
-        h-40 sm:h-52 md:h-64
-        bg-cover bg-center"
+        className="w-full h-40 sm:h-52 md:h-64 bg-[url('/assets/images/chicken.jpg')] bg-cover bg-center"
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 box-border">
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
           className="text-center mb-12 md:mb-16"
         >
           <div className="text-orange-500 text-xs sm:text-sm tracking-widest uppercase mb-3 font-medium">
@@ -112,7 +102,7 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6 box-border"
         >
           {[
             ["Crispy Chicken Burger", "Rs. 450"],
@@ -145,12 +135,10 @@ export default function Menu() {
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="bg-[url('/assets/images/dessert.jpg')]
-        h-40 sm:h-52 md:h-64
-        bg-cover bg-center"
+        className="w-full h-40 sm:h-52 md:h-64 bg-[url('/assets/images/dessert.jpg')] bg-cover bg-center"
       />
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 box-border">
         <motion.div
           variants={fadeUp}
           initial="hidden"
@@ -171,7 +159,7 @@ export default function Menu() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6"
+          className="grid grid-cols-1 md:grid-cols-2 gap-x-8 md:gap-x-16 gap-y-6 box-border"
         >
           {[
             ["Cheese Cake", "Rs. 350"],
