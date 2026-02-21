@@ -124,7 +124,7 @@ export default function Footer() {
         variants={itemVariants}
         className="py-6 text-center text-xs sm:text-sm"
       >
-        <p>&copy; 2025 Kobaha Stay N' Sip. All rights reserved.</p>
+        <p>&copy; 2026 Kobaha Stay N' Sip. All rights reserved.</p>
       </motion.div>
     </motion.footer>
   );
